@@ -1,8 +1,9 @@
 const express = require('express')
 const dbConnection = require('./config/dbConaction')
+require('dotenv').config()
 const routes = require('./routes/studdent.routes');
 
-const port = 8000;
+const port = process.env.PORT;
 const app = express()
 app.set('view engine', 'ejs')
 app.use(express.urlencoded())
