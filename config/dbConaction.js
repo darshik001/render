@@ -1,4 +1,3 @@
-// mongoose.connect('mongodb+srv://darshik111:dj123456@cluster0.h9zcb.mongodb.net/StudentMangament')
 require('dotenv').config()
 
 const mongoose = require('mongoose')
