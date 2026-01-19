@@ -3,7 +3,7 @@ const dbConnection = require('./config/dbConaction')
 require('dotenv').config()
 const routes = require('./routes/studdent.routes');
 
-const port = process.env.PORT;
+const port = process.env.PORT || 8080;
 const app = express()
 app.set('view engine', 'ejs')
 app.use(express.urlencoded())
